@@ -27,3 +27,6 @@ yum clean all
 yum -y update
 
 echo "====== FINISH $HOSTNAME ====="
+
+systemctl reboot
+
