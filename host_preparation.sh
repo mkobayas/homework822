@@ -40,7 +40,7 @@ pids=()
 for node in ${nodes[@]} 
 do
    echo "===== config $node ===="
-   scp $base_dir/config_rhsm_work.sh $node:/root/host_preparation_work.sh
+   scp $base_dir/host_preparation_work.sh $node:/root/host_preparation_work.sh
    ssh -o StrictHostKeyChecking=no $node chmod +x /root/host_preparation_work.sh
    ssh -o StrictHostKeyChecking=no $node "/root/host_preparation_work.sh $1 $2 $3" &> $base_dir/log/$node.log &
    pids+=($!)
