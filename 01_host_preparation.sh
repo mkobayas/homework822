@@ -52,7 +52,6 @@ done
 ######################################################
 
 $base_dir/bastion_preparation_.sh $1 $2 $3
-$base_dir/lb_dns.sh
 
 ######################################################
 # wait host_preparation_work

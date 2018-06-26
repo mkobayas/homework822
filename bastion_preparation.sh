@@ -26,8 +26,10 @@ subscription-manager repos \
 yum clean all
 yum -y update
 
-yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct vim NetworkManager atomic-openshift-utils
+yum install -y wget git net-tools bind-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct vim NetworkManager atomic-openshift-utils atomic-openshift-clients
 yum -y update
+
+rm -rf /srv/repo
 
 echo "====== FINISH $HOSTNAME ====="
 
